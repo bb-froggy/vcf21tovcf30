@@ -21,8 +21,8 @@ namespace vcf21tovcf30
 
         private static string ConvertLineFrom21to30(string line)
         {
-            if (line == "Version:2.1")
-                return "Version:3.0";
+            if (line == "VERSION:2.1")
+                return "VERSION:3.0";
 
             if (line.StartsWith("PHOTO"))
                 return line
